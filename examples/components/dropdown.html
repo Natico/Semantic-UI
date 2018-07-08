@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Theming - Semantic</title>
+
+  <!--- Site CSS -->
+  <link rel="stylesheet" href="../../dist/semantic.css">
+
+  <!--- Component CSS -->
+
+  <!--- Example Libs -->
+  <script src="../assets/library/jquery.min.js"></script>
+  <script src="../../dist/semantic.js"></script>
+
+  <!--- override Component JS -->
+  <script type="text/javascript" src="../../override/dropdown.js"></script>
+
+  <!--- Example CSS -->
+  <style>
+    body {
+      padding: 1em;
+    }
+  </style>
+
+  <!--- Example Javascript -->
+  <script>
+    $(document)
+      .ready(function () {
+        debugger;
+        $('.ui.dropdown')
+          .dropdown();
+      });
+  </script>
+</head>
+
+<body>
+
+  <div class="ui sub header">Selection</div>
+  <select multiple="" name="skills" class="ui fluid normal dropdown">
+    <option value="">Skills</option>
+    <option value="angular">Angular</option>
+    <option value="css">CSS</option>
+    <option value="design">Graphic Design</option>
+    <option value="ember">Ember</option>
+    <option value="html">HTML</option>
+    <option value="ia">Information Architecture</option>
+    <option value="javascript">Javascript</option>
+    <option value="mech">Mechanical Engineering</option>
+    <option value="meteor">Meteor</option>
+    <option value="node">NodeJS</option>
+    <option value="plumbing">Plumbing</option>
+    <option value="python">Python</option>
+    <option value="rails">Rails</option>
+    <option value="react">React</option>
+    <option value="repair">Kitchen Repair</option>
+    <option value="ruby">Ruby</option>
+    <option value="ui">UI Design</option>
+    <option value="ux">User Experience</option>
+  </select>
+
+</body>
+
+</html>
